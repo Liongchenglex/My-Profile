@@ -9,7 +9,7 @@ import About from './components/About';
 import { NavigationProvider } from './contexts/NavigationContext';
 import BlogPost from './components/Blogs/BlogPost'; // New import
 import Contact from './components/Contact';
-import { HashRouter as Router } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   console.log('App rendering');
