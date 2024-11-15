@@ -7,7 +7,6 @@ import { useNavigation } from '../contexts/NavigationContext';
 import { Github, Linkedin, Mail, Briefcase, User, MessageSquare, BookOpen } from 'lucide-react';
 
 const Navigation = () => {
-  console.log('Navigation component rendering');
   
   const location = useLocation();
   const navigate = useNavigate();
@@ -16,10 +15,8 @@ const Navigation = () => {
   
   // Log the context usage
   const navigationContext = useNavigation();
-  console.log('Navigation Context:', navigationContext);
   
   const { isExpanded, setIsExpanded } = navigationContext;
-  console.log('isExpanded:', isExpanded);
 
   // Define navItems
   const navItems = [
@@ -99,7 +96,7 @@ const Navigation = () => {
             {/* Profile Image */}
             <div className={`relative ${isExpanded ? 'w-32 h-32' : 'w-10 h-10'} transition-all duration-300`}>
               <img
-                src="/images/profile.jpeg" 
+                src="images/Profile.jpeg" 
                 alt="Liong Cheng Lex"
                 className="w-full h-full rounded-full object-cover border-2 border-indigo-200 cursor-pointer hover:border-indigo-400 transition-colors"
               />

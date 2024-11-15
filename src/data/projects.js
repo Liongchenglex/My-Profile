@@ -4,7 +4,7 @@ export const projects = [
       title: 'Portfolio Website',
       status: 'Completed',
       slug: 'portfolio-website',
-      image: '/images/project1.png',
+      image: 'images/Project1.png',
       skills: ['React', 'Tailwind CSS', 'Framer Motion', 'SEO'],
       githubLink: 'https://github.com/yourusername/portfolio',
       liveLink: 'https://yourwebsite.com',
