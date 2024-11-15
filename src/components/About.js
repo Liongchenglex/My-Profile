@@ -70,7 +70,7 @@ const About = () => {
                   {/* Replace this div with your image when ready */}
                   <div className="w-full h-full flex items-center justify-center text-gray-400">
                   <img
-                      src="/images/picture2.jpeg"
+                      src={`${process.env.PUBLIC_URL}/images/picture2.jpeg`} 
                       alt="Profile"
                       className="w-full h-full object-cover"
                     />

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
@@ -9,6 +9,7 @@ import About from './components/About';
 import { NavigationProvider } from './contexts/NavigationContext';
 import BlogPost from './components/Blogs/BlogPost'; // New import
 import Contact from './components/Contact';
+import { HashRouter as Router } from 'react-router-dom';
 
 const App = () => {
   console.log('App rendering');
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="/blogs/:slug" element={<BlogPost />} /> {/* New route for individual blog posts */}
             <Route path="/projects/:slug" element={<ProjectDetail />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Hero />} />
           </Routes>
         </Layout>
       </NavigationProvider>
