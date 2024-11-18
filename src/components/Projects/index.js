@@ -122,7 +122,7 @@ const Projects = () => {
                       Problem Statement
                     </h3>
                     <p className="text-gray-700">
-                      {project.problemStatement}
+                      {project.brief.problemStatement}
                     </p>
                   </div>
 
@@ -132,7 +132,7 @@ const Projects = () => {
                       Solution
                     </h3>
                     <p className="text-gray-700">
-                      {project.description}
+                      {project.brief.description}
                     </p>
                   </div>
 

@@ -1,6 +1,6 @@
 export const projects = [
     {
-      id: 2,
+      id: 1,
       title: 'Portfolio Website',
       status: 'Completed',
       slug: 'portfolio-website',
@@ -73,10 +73,11 @@ export const projects = [
       ]
     },
     {
-        id: 1,
+        id: 2,
         title: 'Simple Landing Page',
         status: 'Completed',
         slug: 'landing-page',
+        image: 'images/Project2.png',
         skills: ['HTML', 'CSS', 'JavaScript'],
         githubLink: 'https://github.com/yourusername/portfolio',
         liveLink: 'https://yourwebsite.com',
