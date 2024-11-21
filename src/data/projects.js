@@ -6,11 +6,11 @@ export const projects = [
       slug: 'portfolio-website',
       image: 'images/Project1.png',
       skills: ['React', 'Tailwind CSS', 'Framer Motion', 'SEO'],
-      githubLink: 'https://github.com/yourusername/portfolio',
-      liveLink: 'https://yourwebsite.com',
+      githubLink: 'https://github.com/Liongchenglex/My-Profile',
+      liveLink: 'https://liongchenglex.github.io/My-Profile/#/',
       brief: {
         problemStatement: 'Need for a professional online presence to showcase work and skills',
-        description: 'Built a responsive portfolio website using React and Tailwind CSS with smooth animations and SEO optimization',
+        description: 'Built a responsive portfolio website using React and Tailwind CSS with smooth UI/UX',
       },
       // Flexible sections that you can add/remove as needed
       sections: [
@@ -74,13 +74,13 @@ export const projects = [
     },
     {
         id: 2,
-        title: 'Simple Landing Page',
+        title: 'AI Excel Assistant',
         status: 'Completed',
         slug: 'landing-page',
         image: 'images/Project2.png',
         skills: ['HTML', 'CSS', 'JavaScript'],
-        githubLink: 'https://github.com/yourusername/portfolio',
-        liveLink: 'https://yourwebsite.com',
+        githubLink: 'https://github.com/Liongchenglex/excel-assistant',
+        // liveLink: 'https://yourwebsite.com',
         brief: {
           problemStatement: 'Client needed a simple, effective landing page',
           description: 'Created a responsive landing page with focus on conversion'
@@ -104,12 +104,12 @@ export const projects = [
       // Example 2: Technical Project
       {
         id: 3,
-        title: 'API Integration Service',
+        title: 'AI Youtube Chat Browser Extension',
         status: 'In Progress',
         slug: 'api-service',
         skills: ['Node.js', 'Express', 'MongoDB'],
-        githubLink: 'https://github.com/yourusername/portfolio',
-        liveLink: 'https://yourwebsite.com',
+        githubLink: 'https://github.com/Liongchenglex/excel-assistant',
+        // liveLink: 'https://yourwebsite.com',
         brief: {
           problemStatement: 'Need for a robust API integration service',
           description: 'Building a scalable API integration platform'
