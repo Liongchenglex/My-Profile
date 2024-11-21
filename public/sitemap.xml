@@ -1,0 +1,27 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://liongchenglex.github.io/My-Profile/#/</loc>
+    <lastmod>2024-01-21</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://liongchenglex.github.io/My-Profile/#/projects</loc>
+    <lastmod>2024-01-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://liongchenglex.github.io/My-Profile/#/about</loc>
+    <lastmod>2024-01-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://liongchenglex.github.io/My-Profile/#/blogs</loc>
+    <lastmod>2024-01-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://liongchenglex.github.io/My-Profile/#/contact</loc>
+    <lastmod>2024-01-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+</urlset>
