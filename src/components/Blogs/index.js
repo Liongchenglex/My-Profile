@@ -10,54 +10,6 @@ import {
   getTagsBySection 
 } from '../../data/blogPosts';
 
-// Blog data structure
-// const blogSections = {
-//     'public-diary': {
-//       title: 'Public Diary',
-//       description: 'Personal thoughts and daily musings',
-//       activeClass: 'bg-purple-600 text-white',
-//       hoverClass: 'hover:bg-purple-50'
-//     },
-//     'technology': {
-//       title: 'Technology',
-//       description: 'Insights and experiences in tech',
-//       activeClass: 'bg-blue-600 text-white',
-//       hoverClass: 'hover:bg-blue-50'
-//     },
-//     'wellbeing': {
-//       title: 'Wellbeing',
-//       description: 'Health, mindfulness, and personal growth',
-//       activeClass: 'bg-green-600 text-white',
-//       hoverClass: 'hover:bg-green-50'
-//     }
-//   };
-
-// Sample blog posts (you'll replace this with your actual data)
-// const blogPosts = [
-//   {
-//     id: 1,
-//     title: 'Understanding Blockchain Fundamentals',
-//     description: 'A deep dive into blockchain technology and its applications',
-//     section: 'technology',
-//     tags: ['blockchain', 'cryptocurrency', 'web3'],
-//     date: '2024-01-15',
-//     readTime: '5 min',
-//     slug: 'understanding-blockchain-fundamentals',
-//     image: '/api/placeholder/400/300'
-//   },
-//   {
-//     id: 2,
-//     title: 'Understanding Blockchain Fundamentals',
-//     description: 'A deep dive into blockchain technology and its applications',
-//     section: 'technology',
-//     tags: ['blockchain', 'cryptocurrency', 'web3'],
-//     date: '2024-01-15',
-//     readTime: '5 min',
-//     slug: 'understanding-blockchain-fundamentals',
-//     image: '/api/placeholder/400/300'
-//   },
-//   // Add more posts...
-// ];
 
 const Blogs = () => {
     const navigate = useNavigate();
@@ -67,38 +19,13 @@ const Blogs = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [isSearchFocused, setIsSearchFocused] = useState(false);
     const [showMobileFilters, setShowMobileFilters] = useState(false);
-    
-  
 
-  // Get all unique tags
-  // const sectionTags = useMemo(() => {
-  //   const tags = new Set();
-  //   blogPosts
-  //     .filter(post => activeSection === 'all' || post.section === activeSection)
-  //     .forEach(post => {
-  //       post.tags.forEach(tag => tags.add(tag));
-  //     });
-  //   return Array.from(tags);
-  // }, [activeSection]); // Now depends on activeSection
 
    // Get tags for current section
    const sectionTags = useMemo(() => {
     return getTagsBySection(activeSection);
   }, [activeSection]);
 
-  // Modify the filtered posts logic to handle section-specific filtering
-  // const filteredPosts = useMemo(() => {
-  //   return blogPosts.filter(post => {
-  //     const matchesSection = activeSection === 'all' || post.section === activeSection;
-  //     const matchesTags = activeTags.length === 0 || 
-  //       activeTags.some(tag => post.tags.includes(tag));
-  //     const matchesSearch = post.title.toLowerCase()
-  //       .includes(searchQuery.toLowerCase()) ||
-  //       post.description.toLowerCase().includes(searchQuery.toLowerCase());
-      
-  //     return matchesSection && matchesTags && matchesSearch;
-  //   });
-  // }, [activeSection, activeTags, searchQuery]);
 
   const filteredPosts = useMemo(() => {
     return getPostsBySection(activeSection).filter(post => {
@@ -356,7 +283,7 @@ const Blogs = () => {
                   transition: { duration: 0.2 }
                 }}
                 className="bg-white rounded-xl shadow-md overflow-hidden cursor-pointer"
-                onClick={() => navigate(`/blogs/${post.slug}`)}
+                onClick={() => window.open(post.mediumUrl, '_blank')}
               >
                 <motion.img 
                   src={post.image} 

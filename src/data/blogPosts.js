@@ -32,60 +32,7 @@ export const blogSections = {
       title: 'Understanding Blockchain Fundamentals',
       slug: 'understanding-blockchain-fundamentals',
       description: 'A deep dive into blockchain technology and its applications',
-      content: `
-# Understanding Blockchain Fundamentals
-
-Blockchain technology has revolutionized the way we think about decentralized systems. 
-Let's explore the key concepts and applications.
-
-## Key Concepts
-
-1. **Decentralization**
-2. **Immutability**
-3. **Consensus Mechanisms**
-
-### Code Example
-
-\`\`\`javascript
-class Block {
-  constructor(data, previousHash = '') {
-    this.timestamp = Date.now();
-    this.data = data;
-    this.previousHash = previousHash;
-    this.hash = this.calculateHash();
-  }
-
-  calculateHash() {
-    return crypto
-      .createHash('sha256')
-      .update(
-        this.previousHash + 
-        this.timestamp + 
-        JSON.stringify(this.data)
-      )
-      .digest('hex');
-  }
-}
-\`\`\`
-
-> Important: Blockchain's immutability comes from its cryptographic nature and distributed consensus.
-
-### Key Benefits
-
-* Transparency
-* Security
-* Trustless operations
-
-For more information, check out [this resource](https://example.com).
-
-![Blockchain Diagram](/images/blockchain-diagram.png)
-
-| Feature | Description |
-|---------|-------------|
-| Immutability | Once recorded, data cannot be changed |
-| Transparency | All transactions are public |
-| Security | Cryptographically secure |
-    `,
+      mediumUrl: "https://medium.com/@chenglex1",
       section: 'technology',
       tags: ['blockchain', 'cryptocurrency', 'web3'],
       date: '2024-01-15',
