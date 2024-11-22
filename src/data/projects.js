@@ -72,6 +72,8 @@ export const projects = [
         }
       ]
     },
+    
+    // Excel Assitant
     {
         id: 2,
         title: 'AI Excel Assistant',
