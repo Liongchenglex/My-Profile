@@ -1,6 +1,70 @@
 export const projects = [
+            // Resume Analysis Job Board
+            {
+              id: 1,
+              title: 'AI Powered Job Board',
+              status: 'In Progress',
+              slug: 'landing-page',
+              image: 'images/Project4.png',
+              skills: ['HTML', 'CSS', 'JavaScript'],
+              githubLink: 'https://github.com/Liongchenglex/excel-assistant',
+              // liveLink: 'https://yourwebsite.com',
+              brief: {
+                problemStatement: 'Creating tailored, high-quality job applications is time-intensive and repetitive.',
+                description: 'AI tool that automatically personalizes resumes and cover letters to match job descriptions while maintaining authenticity.'
+              },
+              sections: [
+                {
+                  type: 'text',
+                  title: 'Project Details',
+                  content: 'A straightforward landing page project...'
+                },
+                {
+                  type: 'metrics',
+                  title: 'Results',
+                  items: [
+                    { label: 'Conversion Rate', value: '12%', change: '+5%' }
+                  ]
+                }
+              ]
+            },
+      // Example 2: Youtube
+      {
+        id: 2,
+        title: 'AI Youtube Chat Assistant Chrome Extension',
+        status: 'MVP',
+        slug: 'api-service',
+        image: 'images/Project3.png',
+        skills: ['Node.js', 'Express', 'MongoDB'],
+        githubLink: 'https://github.com/Liongchenglex/Youtube-Assistant',
+        // liveLink: 'https://yourwebsite.com',
+        brief: {
+          problemStatement: 'Valuable information in long YouTube videos is difficult to access efficiently.',
+          description: 'AI chatbot that extracts and summarizes key points from videos, enabling quick content digestion through interactive Q&A.'
+        },
+        sections: [
+          {
+            type: 'tech-stack',
+            title: 'Technology Stack',
+            items: {
+              Backend: ['Node.js', 'Express', 'MongoDB'],
+              Tools: ['Docker', 'Jest', 'GitHub Actions']
+            }
+          },
+          {
+            type: 'list',
+            title: 'Key Features',
+            items: [
+              'Automatic retry mechanism',
+              'Rate limiting',
+              'Error handling'
+            ]
+          }
+        ]
+      },
+
     {
-      id: 1,
+      id: 3,
       title: 'Portfolio Website',
       status: 'Completed',
       slug: 'portfolio-website',
@@ -72,70 +136,38 @@ export const projects = [
         }
       ]
     },
-    
-    // Excel Assitant
-    {
-        id: 2,
-        title: 'AI Excel Assistant',
-        status: 'Completed',
-        slug: 'landing-page',
-        image: 'images/Project2.png',
-        skills: ['HTML', 'CSS', 'JavaScript'],
-        githubLink: 'https://github.com/Liongchenglex/excel-assistant',
-        // liveLink: 'https://yourwebsite.com',
-        brief: {
-          problemStatement: 'Client needed a simple, effective landing page',
-          description: 'Created a responsive landing page with focus on conversion'
-        },
-        sections: [
-          {
-            type: 'text',
-            title: 'Project Details',
-            content: 'A straightforward landing page project...'
-          },
-          {
-            type: 'metrics',
-            title: 'Results',
-            items: [
-              { label: 'Conversion Rate', value: '12%', change: '+5%' }
-            ]
-          }
-        ]
-      },
       
-      // Example 2: Technical Project
-      {
-        id: 3,
-        title: 'AI Youtube Chat Browser Extension',
-        status: 'In Progress',
-        slug: 'api-service',
-        skills: ['Node.js', 'Express', 'MongoDB'],
-        githubLink: 'https://github.com/Liongchenglex/excel-assistant',
-        // liveLink: 'https://yourwebsite.com',
-        brief: {
-          problemStatement: 'Need for a robust API integration service',
-          description: 'Building a scalable API integration platform'
-        },
-        sections: [
-          {
-            type: 'tech-stack',
-            title: 'Technology Stack',
-            items: {
-              Backend: ['Node.js', 'Express', 'MongoDB'],
-              Tools: ['Docker', 'Jest', 'GitHub Actions']
-            }
-          },
-          {
-            type: 'list',
-            title: 'Key Features',
-            items: [
-              'Automatic retry mechanism',
-              'Rate limiting',
-              'Error handling'
-            ]
-          }
-        ]
+
+
+          // Excel Assitant
+    {
+      id: 4,
+      title: 'AI Excel Assistant',
+      status: 'Completed',
+      slug: 'landing-page',
+      image: 'images/Project2.png',
+      skills: ['HTML', 'CSS', 'JavaScript'],
+      githubLink: 'https://github.com/Liongchenglex/excel-assistant',
+      // liveLink: 'https://yourwebsite.com',
+      brief: {
+        problemStatement: 'Users struggle to create Excel formulas and macros despite knowing their desired data outcomes.',
+        description: 'AI assistant that generates Excel formulas and macros by analyzing initial and target data states, with step-by-step guidance.'
       },
+      sections: [
+        {
+          type: 'text',
+          title: 'Project Details',
+          content: 'A straightforward landing page project...'
+        },
+        {
+          type: 'metrics',
+          title: 'Results',
+          items: [
+            { label: 'Conversion Rate', value: '12%', change: '+5%' }
+          ]
+        }
+      ]
+    },
       
       // Example 3: Design-focused Project
       // {

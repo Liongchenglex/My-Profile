@@ -29,37 +29,21 @@ export const blogSections = {
   export const blogPosts = [
     {
       id: 1,
-      title: 'Understanding Blockchain Fundamentals',
-      slug: 'understanding-blockchain-fundamentals',
-      description: 'A deep dive into blockchain technology and its applications',
+      title: 'From Legal Briefs to Tech Sprints: A Career Pivot Guide',
+      slug: 'From Legal Briefs to Tech Sprints: A Career Pivot Guides',
+      description: 'A look into my journey pivoting into tech and the actonable steps to take',
       mediumUrl: "https://medium.com/@chenglex1",
-      section: 'technology',
-      tags: ['blockchain', 'cryptocurrency', 'web3'],
+      section: 'public-diary',
+      tags: ['Career', 'Technology', 'Learning', 'Self-Improvement'],
       date: '2024-01-15',
-      readTime: '5 min',
-      image: '/api/placeholder/400/300'
+      readTime: '2 mins',
+      image: 'images/blog1.jpg'
     },
     {
         id: 2,
         title: 'My Journey into Web Development',
         slug: 'my-journey-into-web-development',
         description: 'Personal reflections on becoming a web developer and lessons learned along the way',
-        content: `
-# My Journey into Web Development
-    
-When I first started my journey into web development, I had no idea where it would lead me...
-    
-## The Beginning
-It all started when I decided to make a career switch...
-    
-## Key Learnings
-1. Consistency is key
-2. Build real projects
-3. Engage with the community
-    
-## Current Status
-Now, after months of dedicated learning...
-        `,
         section: 'public-diary',
         tags: ['career', 'web-development', 'learning', 'blockchain'],
         date: '2024-02-01',
@@ -72,22 +56,6 @@ Now, after months of dedicated learning...
         title: 'Atomic Habits - Book Review',
         slug: 'atomic-habits-book-review',
         description: 'An in-depth review of James Clear`s Atomic Habits and how it changed my perspective',
-        content: `
-# My Journey into Web Development
-
-When I first started my journey into web development, I had no idea where it would lead me...
-
-## The Beginning
-It all started when I decided to make a career switch...
-
-## Key Learnings
-1. Consistency is key
-2. Build real projects
-3. Engage with the community
-
-## Current Status
-Now, after months of dedicated learning...
-`,
         section: 'book-reviews', // Using our new section
         tags: ['books', 'self-improvement', 'habits'],
         date: '2024-02-05',
