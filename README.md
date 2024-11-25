@@ -17,6 +17,7 @@ A modern, responsive portfolio website built with React, showcasing my professio
 - 🎨 Interactive UI with smooth animations
 - 📱 Mobile-friendly navigation
 - 📧 Working contact form
+- 🌟 Dynamic Blog Filter and Search
 
 ## 📱 Features in Detail
 ### Navigation
