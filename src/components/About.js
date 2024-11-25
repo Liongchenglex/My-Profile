@@ -86,15 +86,17 @@ const About = () => {
                 </h2>
                 <div className="prose prose-lg text-gray-600">
                   <p className="mb-4 text-justify">
-                    I'm a versatile professional with a unique blend of technical and legal expertise, 
-                    currently working as a Business Analyst with a focus on transforming complex 
-                    business requirements into efficient technical solutions.
+                  My journey began in the courtrooms, but my heart found its true calling in the world of technology. 
+                  The transition from law to tech wasn't just a career change – it was a natural evolution where I discovered that 
+                  the analytical thinking I developed as a lawyer perfectly complemented my passion for building digital solutions.
+                  I've always been fascinated by how technology can solve real-world problems, and this intersection of tech, business, 
+                  and law is where I thrive.
                   </p>
                   <p className="text-justify">
-                    With experience spanning across business analysis, web design, and legal practice,
-                    I bring a comprehensive approach to problem-solving. My background in law combined 
-                    with technical expertise allows me to bridge the gap between business needs and 
-                    technical implementation, ensuring solutions that are both practical and compliant.
+                  I'm an eternally curious soul, always excited about learning something new and taking on fresh challenges. 
+                  Whether it's exploring emerging technologies or understanding complex business problems, I find myself constantly driven to grow and innovate. My ultimate dream? 
+                  Building products that make a real difference in people's lives. When I'm not diving into new technologies or brainstorming product ideas,
+                  you'll find me seeking out opportunities to expand my horizons. 
                   </p>
                 </div>
               </div>

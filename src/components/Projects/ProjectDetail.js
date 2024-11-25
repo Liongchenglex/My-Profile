@@ -6,12 +6,38 @@ import { Github, ExternalLink, ArrowLeft } from 'lucide-react';
 import { projects } from '../../data/projects';
 
 // Section components
-const TextSection = ({ title, content }) => (
-  <div className="prose max-w-none">
-    <h3 className="text-xl font-semibold mb-4">{title}</h3>
-    <p className="text-gray-600">{content}</p>
-  </div>
-);
+const TextSection = ({ title, content }) => {
+  // Parse custom link format: [[url||text]]
+  const parseContent = (text) => {
+    const linkRegex = /\[\[(.*?)\|\|(.*?)\]\]/g;
+    return text.replace(linkRegex, (match, url, text) => {
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">${text}</a>`;
+    });
+  };
+
+  return (
+    <div className="prose max-w-none">
+      <h3 className="text-xl font-semibold mb-4">{title}</h3>
+      {Array.isArray(content) ? (
+        content.map((paragraph, index) => (
+          <p 
+            key={index} 
+            className="text-gray-600 mb-4"
+            dangerouslySetInnerHTML={{ __html: parseContent(paragraph) }}
+          />
+        ))
+      ) : (
+        content.split('\n\n').map((paragraph, index) => (
+          <p 
+            key={index} 
+            className="text-gray-600 mb-4"
+            dangerouslySetInnerHTML={{ __html: parseContent(paragraph) }}
+          />
+        ))
+      )}
+    </div>
+  );
+};
 
 const ListSection = ({ title, items }) => (
   <div>
@@ -219,7 +245,7 @@ const ProjectDetail = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-xl shadow-sm p-6"
+                className="bg-white rounded-xl shadow-sm p-6 text-justify"
               >
                 <SectionComponent {...section} />
               </motion.div>

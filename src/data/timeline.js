@@ -7,37 +7,27 @@ export const timelineData = {
         location: "Singapore",
         period: "05/2022 – 09/2024",
         highlights: [
-          "Led critical initiative to resolve technical debt in legacy system",
-          "Revolutionized documentation standards",
-          "Designed complex Case Management system",
-          "Led cross-functional team in Medical Claim Analytics System",
+          "Led a cross-functional team in deeveloping a complex enterprise system and deliver it successfully",
+          "Spearheaded a strategic initiative to resolve technical debts from a legacy system",
+          "Led an initiative to repurpose an existing analytics system by redesigning dashboards in the system",
+          "Served as the single point of contact for project scope negotiations, timeline planning, and solution delivery, driving customer success",
+          "Spearheaded an initiative to ensure quality delivery through comprehensive User Acceptance Testing, change management and issue tracking"
         ],
         skills: [
           "Business Analysis",
           "Agile Methodologies",
           "Stakeholder Management",
-          "Technical Documentation",
+          "Requirement Documentation",
           "SQL",
           "Python",
-          "JIRA"
-        ]
-      },
-      {
-        id: 'web-designer',
-        role: "Web Designer",
-        company: "Freelance",
-        period: "11/2021 – 06/2022",
-        highlights: [
-          "Delivered Ecommerce websites using Figma, Shopify and Webflow",
-          "Pitched POCs to small businesses"
-        ],
-        skills: [
+          "JIRA",
           "Figma",
-          "Shopify",
-          "Webflow",
-          "UI/UX Design",
-          "Client Management",
-          "HTML/CSS"
+          "Excel",
+          "SLDC",
+          "Agile",
+          "Process Improvement",
+          "Data Analytics",
+          "Quality Assurance"
         ]
       },
       {
@@ -47,16 +37,18 @@ export const timelineData = {
         location: "Kuala Lumpur, Malaysia",
         period: "04/2021 – 01/2022",
         highlights: [
-          "Performed legal Due Diligence for multi-million M&A projects",
-          "Composed Legal Opinions on data privacy and cyber security",
-          "Co-authored opinions for Consultation Papers"
+          "Performed legal Due Diligence for multi-million M&A projects ensuring a watertight deal",
+          "Composed Legal Opinions on data privacy and cyber security ensuring that client is well-aware of local regulations",
+          "Co-authored opinions for Consultation Papers that adivses on the adoption of ESG in the Malaysian Stock Exchange"
         ],
         skills: [
           "Legal Research",
           "Due Diligence",
           "Regulatory Compliance",
           "Legal Writing",
-          "Data Privacy"
+          "Data Privacy",
+          "Clear Communication",
+          "Presentation"
         ]
       }
     ],

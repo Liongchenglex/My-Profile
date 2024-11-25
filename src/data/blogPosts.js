@@ -32,36 +32,37 @@ export const blogSections = {
       title: 'From Legal Briefs to Tech Sprints: A Career Pivot Guide',
       slug: 'From Legal Briefs to Tech Sprints: A Career Pivot Guides',
       description: 'A look into my journey pivoting into tech and the actonable steps to take',
-      mediumUrl: "https://medium.com/@chenglex1",
+      mediumUrl: "https://medium.com/@chenglex1/from-legal-briefs-to-tech-sprints-a-career-pivot-guide-bfb7b0ef245b",
       section: 'public-diary',
       tags: ['Career', 'Technology', 'Learning', 'Self-Improvement'],
-      date: '2024-01-15',
-      readTime: '2 mins',
+      date: '2024-11-22',
+      readTime: '5 mins',
       image: 'images/blog1.jpg'
     },
     {
         id: 2,
-        title: 'My Journey into Web Development',
+        title: 'Microservices: Breaking Down the Modern Software Architecture',
         slug: 'my-journey-into-web-development',
-        description: 'Personal reflections on becoming a web developer and lessons learned along the way',
-        section: 'public-diary',
-        tags: ['career', 'web-development', 'learning', 'blockchain'],
-        date: '2024-02-01',
+        description: 'A deep dive into microservices and its relevance today',
+        mediumUrl: "https://medium.com/@chenglex1/microservices-breaking-down-the-modern-software-architecture-6e666119ece9",
+        section: 'Technology',
+        tags: ['Technology', 'Cloud', 'Microservices'],
+        date: '2024-11-23',
         readTime: '4 min',
-        image: '/api/placeholder/400/300'
+        image: 'images/blog2.png'
       },
 
-      {
-        id: 3,
-        title: 'Atomic Habits - Book Review',
-        slug: 'atomic-habits-book-review',
-        description: 'An in-depth review of James Clear`s Atomic Habits and how it changed my perspective',
-        section: 'book-reviews', // Using our new section
-        tags: ['books', 'self-improvement', 'habits'],
-        date: '2024-02-05',
-        readTime: '6 min',
-        image: '/api/placeholder/400/300'
-      },
+      // {
+      //   id: 3,
+      //   title: 'Atomic Habits - Book Review',
+      //   slug: 'atomic-habits-book-review',
+      //   description: 'An in-depth review of James Clear`s Atomic Habits and how it changed my perspective',
+      //   section: 'book-reviews', // Using our new section
+      //   tags: ['books', 'self-improvement', 'habits'],
+      //   date: '2024-02-05',
+      //   readTime: '6 min',
+      //   image: '/api/placeholder/400/300'
+      // },
     // Add more posts here...
   ];
   
