@@ -12,18 +12,18 @@ export const blogSections = {
       activeClass: 'bg-blue-600 text-white',
       hoverClass: 'hover:bg-blue-50'
     },
-    'wellbeing': {
-      title: 'Wellbeing',
-      description: 'Health, mindfulness, and personal growth',
-      activeClass: 'bg-green-600 text-white',
-      hoverClass: 'hover:bg-green-50'
-    },
-    'book-reviews': {
-        title: 'Book Reviews',
-        description: "Thoughts and analysis on books I've read",
-        activeClass: 'bg-yellow-600 text-white',
-        hoverClass: 'hover:bg-yellow-50'
-      }
+    // 'wellbeing': {
+    //   title: 'Wellbeing',
+    //   description: 'Health, mindfulness, and personal growth',
+    //   activeClass: 'bg-green-600 text-white',
+    //   hoverClass: 'hover:bg-green-50'
+    // },
+    // 'book-reviews': {
+    //     title: 'Book Reviews',
+    //     description: "Thoughts and analysis on books I've read",
+    //     activeClass: 'bg-yellow-600 text-white',
+    //     hoverClass: 'hover:bg-yellow-50'
+    //   }
   };
   
   export const blogPosts = [
@@ -45,7 +45,7 @@ export const blogSections = {
         slug: 'my-journey-into-web-development',
         description: 'A deep dive into microservices and its relevance today',
         mediumUrl: "https://medium.com/@chenglex1/microservices-breaking-down-the-modern-software-architecture-6e666119ece9",
-        section: 'Technology',
+        section: 'technology',
         tags: ['Technology', 'Cloud', 'Microservices'],
         date: '2024-11-23',
         readTime: '4 min',

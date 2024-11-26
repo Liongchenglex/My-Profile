@@ -7,7 +7,7 @@ export const projects = [
               slug: 'job-board',
               image: 'images/Project4.png',
               skills: ['React', 'JavaScript'],
-              githubLink: 'https://github.com/Liongchenglex',
+              githubLink: 'https://github.com/Liongchenglex/job-board',
               // liveLink: 'https://yourwebsite.com',
               brief: {
                 problemStatement: 'Creating tailored, high-quality job applications is time-intensive and repetitive.',
@@ -38,7 +38,7 @@ export const projects = [
         image: 'images/Project3.png',
         skills: ['Youtube-transcpt-API', 'Python', 'Javascript', 'FastAPI','OpenAI GPT4'],
         githubLink: 'https://github.com/Liongchenglex/Youtube-Assistant',
-        // liveLink: 'https://yourwebsite.com',
+        liveLink: 'https://youtu.be/LsuW0W0QKSs',
         brief: {
           problemStatement: 'Valuable information in long YouTube videos is difficult to access efficiently.',
           description: 'AI chatbot that extracts and summarizes key points from videos, enabling quick content digestion through interactive Q&A.'
@@ -58,7 +58,7 @@ export const projects = [
               {
                 title: 'Portfolio Website Overview',
                 description: 'A walkthrough of the main features and functionality',
-                url: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+                url: 'https://www.youtube.com/embed/LsuW0W0QKSs?si=HYyqV8cK6rRfdrYM'
               }
             ]
           },
@@ -137,7 +137,7 @@ export const projects = [
       image: 'images/Project2.png',
       skills: ['Node JS', 'AI Integration', 'JavaScript'],
       githubLink: 'https://github.com/Liongchenglex/excel-assistant',
-      // liveLink: 'https://yourwebsite.com',
+      liveLink: 'https://youtu.be/q7-RkpwauAM',
       brief: {
         problemStatement: 'Excel users struggle to create Excel formulas and macros despite knowing their desired data outcomes.',
         description: 'AI assistant that generates Excel formulas and macros by analyzing initial and target data states, with step-by-step guidance.'
@@ -159,7 +159,7 @@ export const projects = [
           items: [
             {
               description: 'A walkthrough of the main features and functionality',
-              url: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+              url: 'https://www.youtube.com/embed/q7-RkpwauAM?si=LYZsZuERUhwh47fu'
             }
           ]
         },
