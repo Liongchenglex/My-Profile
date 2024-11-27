@@ -48,6 +48,7 @@ export const projects = [
             type: 'text',
             title: 'Project Details',
             content: ['This project is a A Chrome extension that enables interactive AI-powered conversations about YouTube videos. Users can ask questions, get summaries, and interact with video content through a chat interface powered by GPT-4.',
+              `This project is currently in its MVP stage and has not yet been commercialized. I am working on addressing rate-limiting challenges to ensure the costs remain manageable and the solution becomes commercially viable.`,
               'You can read more at [[https://github.com/Liongchenglex/Youtube-Assistant/blob/main/README.md||GitHub README]].'
             ]
           },
