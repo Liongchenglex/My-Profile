@@ -2,9 +2,9 @@ export const projects = [
             // Resume Analysis Job Board
             {
               id: 1,
-              title: 'AI Powered Job Board',
+              title: 'AI Powered Resume Optimizer',
               status: 'In Progress',
-              slug: 'job-board',
+              slug: 'resume-optimizer',
               image: 'images/Project4.png',
               skills: ['React', 'JavaScript'],
               githubLink: 'https://github.com/Liongchenglex/job-board',
