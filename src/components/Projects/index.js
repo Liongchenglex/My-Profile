@@ -59,13 +59,14 @@ const Projects = () => {
               <motion.article
                 key={project.id}
                 layoutId={`project-${project.id}`}
-                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                className="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 whileHover={{ y: -5 }}
                 onHoverStart={() => setHoveredId(project.id)}
                 onHoverEnd={() => setHoveredId(null)}
+                onClick={() => navigate(`/projects/${project.slug}`)} 
               >
                 {/* Project Image */}
                 <div className="relative h-64 overflow-hidden">
@@ -88,6 +89,7 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-2 bg-white rounded-full hover:bg-gray-100 transition-colors"
+                        onClick={(e) => e.stopPropagation()} 
                       >
                         <Github size={24} />
                       </a>
@@ -98,6 +100,7 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-2 bg-white rounded-full hover:bg-gray-100 transition-colors"
+                        onClick={(e) => e.stopPropagation()} 
                       >
                         <ExternalLink size={24} />
                       </a>

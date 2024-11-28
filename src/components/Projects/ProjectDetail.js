@@ -1,9 +1,11 @@
 // src/components/Projects/ProjectDetail.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Github, ExternalLink, ArrowLeft } from 'lucide-react';
 import { projects } from '../../data/projects';
+
+
 
 // Section components
 const TextSection = ({ title, content }) => {
@@ -147,10 +149,17 @@ const VideoSection = ({ title, items }) => (
 );
 
 // Main component
+
 const ProjectDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
   const project = projects.find(p => p.slug === slug);
+
+
+
 
   if (!project) return null;
 
@@ -163,6 +172,8 @@ const ProjectDetail = () => {
     metrics: MetricsSection,
     video: VideoSection 
   };
+
+
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -251,6 +262,54 @@ const ProjectDetail = () => {
               </motion.div>
             );
           })}
+
+          {/* Project Navigation */}
+          <div className="mt-12 border-t pt-8">
+            <div className="flex justify-between items-center">
+              {/* Previous Project */}
+              {projects.findIndex(p => p.slug === slug) > 0 && (
+                <motion.button
+                  whileHover={{ x: -5 }}
+                  onClick={() => {
+                    const currentIndex = projects.findIndex(p => p.slug === slug);
+                    navigate(`/projects/${projects[currentIndex - 1].slug}`);
+                  }}
+                  className="flex items-center text-gray-600 hover:text-in"
+                >
+                  <ArrowLeft className="mr-2" size={20} />
+                  <div className="text-left">
+                    <div className="text-sm text-gray-500">Previous Project</div>
+                    <div className="font-medium">
+                      {projects[projects.findIndex(p => p.slug === slug) - 1]?.title}
+                    </div>
+                  </div>
+                </motion.button>
+              )}
+
+              {/* Spacer for when only one button is shown */}
+              <div className="flex-grow" />
+
+              {/* Next Project */}
+              {projects.findIndex(p => p.slug === slug) < projects.length - 1 && (
+                <motion.button
+                  whileHover={{ x: 5 }}
+                  onClick={() => {
+                    const currentIndex = projects.findIndex(p => p.slug === slug);
+                    navigate(`/projects/${projects[currentIndex + 1].slug}`);
+                  }}
+                  className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors"
+                >
+                  <div className="text-right">
+                    <div className="text-sm text-gray-500">Next Project</div>
+                    <div className="font-medium">
+                      {projects[projects.findIndex(p => p.slug === slug) + 1]?.title}
+                    </div>
+                  </div>
+                  <ArrowLeft className="ml-2 rotate-180" size={20} />
+                </motion.button>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </div>

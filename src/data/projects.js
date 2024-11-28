@@ -18,6 +18,7 @@ export const projects = [
                   type: 'text',
                   title: 'Project Details',
                   content: ['This project is currently a Work in Progress. Currently, only the Frontend is completed. The details will be fully updated on completion.',
+                    'In the meantime, you can refer to the mockup of the MVP to have a rough idea of the project [[https://www.figma.com/design/yjhYMQtNGTGu5nXdsu2gzz/WorkWise-Wireframe?node-id=0-1&t=OmiETb3JehcJwLAO-1||Figma Design]].'
                   ]
                 },
                 {
@@ -36,7 +37,7 @@ export const projects = [
         status: 'MVP',
         slug: 'youtube-assistant',
         image: 'images/Project3.png',
-        skills: ['Youtube-transcpt-API', 'Python', 'Javascript', 'FastAPI','OpenAI GPT4'],
+        skills: ['Youtube-transcpt-API', 'Python', 'Javascript', 'Prompt Engineering','OpenAI GPT4'],
         githubLink: 'https://github.com/Liongchenglex/Youtube-Assistant',
         liveLink: 'https://youtu.be/LsuW0W0QKSs',
         brief: {
